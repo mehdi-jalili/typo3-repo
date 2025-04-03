@@ -1,0 +1,1 @@
+CSS workaround for clients with legacy browsers that don't support light-dark() in Typo3 13 backend
