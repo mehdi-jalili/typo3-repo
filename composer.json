@@ -1,0 +1,20 @@
+{
+    "name": "anothervision/av_lightdarklegacy",
+    "type": "typo3-cms-extension",
+    "description": "CSS workaround for clients with legacy browsers that don't support light-dark() in Typo3 13 backend",
+    "authors": [
+        {
+            "name": "Mehdi Jalili",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^13.0"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "av_lightdarklegacy"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "CSS workaround for clients with legacy browsers that don't support light-dark() in Typo3 13 backend",
+        "emConf": {
+            "category": "be",
+            "custom_category": "",
+            "dependsOn": "typo3 => 13.0.0-13.5.99",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": false,
+            "generateEmptyGitRepository": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "13.0.0-13.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "av_lightdarklegacy",
+        "name": "av light-dark Legacy Browsers",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "jalilimehdi",
+                "email": "jalilimehdi.1366@gmail.com",
+                "name": "Mehdi Jalili",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "AnotherVision"
+    }
+}
