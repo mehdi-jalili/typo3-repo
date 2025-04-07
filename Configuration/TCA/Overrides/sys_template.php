@@ -1,4 +1,10 @@
 <?php
-defined('TYPO3') || die();
+if (!defined('TYPO3')) {
+    die('Access denied.');
+}
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('av_lightdarklegacy', 'Configuration/TypoScript', 'av light-dark Legacy Browsers');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    'view_statistics',
+    'Configuration/TypoScript',
+    'View-Statistics'
+);

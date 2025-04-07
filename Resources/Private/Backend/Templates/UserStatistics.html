@@ -1,0 +1,20 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:modules="http://typo3.org/ns/CodingMs/Modules/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:layout name="Backend"/>
+<f:section name="Content">
+	<modules:be.header header="{f:translate(key: 'tx_viewstatistics_label.module_headline_list_for_user')}" />
+	<f:flashMessages />
+	<f:be.infobox title="Frontend-User: (username: {frontendUser.username})" state="-1">
+	</f:be.infobox>
+	<p>
+		<f:link.action action="listForUser" class="btn btn-default"><f:translate key="tx_viewstatistics_label.back_to_search"/></f:link.action>
+	</p>
+	<f:if condition="{tracking}">
+		<f:render partial="Table/Table" arguments="{list: list, data: tracking}" />
+	</f:if>
+	<modules:be.footer />
+</f:section>
+</html>
+

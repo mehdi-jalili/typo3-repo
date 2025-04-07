@@ -1,0 +1,75 @@
+{
+    "title": "TYPO3 View-Statistics",
+    "subtitle": "This extension inserts statistics records on each page. It doesn't use any cookies!",
+    "logo": "../Resources/Public/Icons/Extension.svg",
+    "markdown": "../Readme.en.md",
+    "attention": "This extension doesn't track anything if you log in as a backend user and access the frontend simultaneously with the same domain name. In this case open another browser as a frontend user in order to trigger tracking. Even an incognito window of the same browser might prevent tracking.",
+    "meta": {
+        "description": "TYPO3 View-Statistics - This extension inserts statistics records on each page. It doesn't use any cookies!",
+        "abstract": "Logs frontend actions and display them in a backend module. Track page views, News, Downloads and custom objects. Optionally tracks frontend user logins and login durations. Alternative extension for Google-Analytics, Matomo, Piwik - this extension does not use any cookies! By default it does not track any personal data like IP address or even the user agent (though this can be activated optionally).",
+        "keywords": "TYPO3, extension, Statistics, Analytics",
+        "og:title": "TYPO3 View-Statistics",
+        "og:description": "TYPO3 View-Statistics - This extension inserts statistics records on each page. It doesn't use any cookies!"
+    },
+    "features": [
+        "Select data to be tracked (configurable in Extensionmanager: all visitors - both logged-in and non-logged-in frontend users, only frontend users who are logged in or only visitors who have not logged in)",
+        "Optional: Track the ID of the frontend user",
+        "Optional: Track IP address",
+        "Optional: Track login duration of frontend users",
+        "Optional: Track User Agents (for example which web browser was in use)",
+        "Backend module with: overview, listings, CSV export and user permissions",
+        "Track pages and objects such as: news articles (EXT:news), downloads (EXT:downloadmanager), products (EXT:shop), realt properties (EXT:openimmo)",
+        "Configure your own objects in TypoScript"
+    ],
+    "links": {
+        "product": {
+            "link": "https://www.github.com/mehdi-jalili/typo3-repo/",
+            "name": "TYPO3 View-Statistics Productdetails"
+        },
+        "download": {
+            "link": "https://www.github.com/mehdi-jalili/typo3-repo/",
+            "name": "TYPO3 View-Statistics Download"
+        }
+    },
+    "pages": [
+        {
+            "title": "Configuration",
+            "pages": [
+                {
+                    "title": "Configure the View Statistics extension",
+                    "markdown": "Configuration.en.md",
+                    "meta": {
+                        "description": "TYPO3 View-Statistics - Configure global settings of who or what to track.",
+                        "abstract": "View-Statistics configure extension",
+                        "keywords": "TYPO3, extension, View-Statistics, configuration",
+                        "og:title": "TYPO3 View-Statistics - Configure the View Statistics extension",
+                        "og:description": "Configure global settings of who or what to track."
+                    }
+                },
+                {
+                    "title": "Configure your own tracking objects",
+                    "markdown": "ConfigureTrackingObjects.en.md",
+                    "meta": {
+                        "description": "TYPO3 View-Statistics - Configure your own tracking objects with TypoScript that are inserted into the template.",
+                        "abstract": "Configure your own tracking objects",
+                        "keywords": "TYPO3, extension, View-Statistics, configuration, tracking objects",
+                        "og:title": "TYPO3 View-Statistics - Configure your own tracking objects",
+                        "og:description": "Configure your own tracking objects with TypoScript that are inserted into the template."
+                    }
+                },
+                {
+                    "title": "View Statistics visitor counter",
+                    "markdown": "VisitorCounter.en.md",
+                    "meta": {
+                        "description": "TYPO3 View-Statistics - Configuration and setup of a visitor counter and optional display in the frontend.",
+                        "abstract": "Configure a visitor counter",
+                        "keywords": "TYPO3, extension, View-Statistics, configuration, visitor counter",
+                        "og:title": "TYPO3 View-Statistics - Configure a visitor counter",
+                        "og:description": "Configuration and setup of a visitor counter and optional display in the frontend"
+                    }
+                }
+            ]
+        }
+
+    ]
+}

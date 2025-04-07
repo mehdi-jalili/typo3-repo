@@ -1,0 +1,10 @@
+{namespace modules = CodingMs\Modules\ViewHelpers}
+{namespace core = TYPO3\CMS\Core\ViewHelpers}
+<modules:variable.set name="languageKey" value="tx_viewstatistics_label.headline_statistic_for_user" />
+
+	<f:link.action action="userStatistics" controller="Backend"
+				   class="btn btn-default"
+				   arguments="{frontendUser: listItem.uid}"
+				   title="{f:translate(key: languageKey)}"><core:icon alternativeMarkupIdentifier="inline" identifier="actions-document-view"/></f:link.action>
+
+

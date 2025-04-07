@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:modules="http://typo3.org/ns/CodingMs/Modules/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:layout name="Backend"/>
+<f:section name="Content">
+	<modules:be.header header="{f:translate(key: 'tx_viewstatistics_label.module_headline_list_for_user')}" />
+	<f:flashMessages />
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<f:translate key="tx_viewstatistics_label.filter_headline"/>
+		</div>
+		<div class="panel-body">
+			<f:form class="row" action="{list.action}" controller="Backend" pageUid="{list.pid}">
+				<f:form.hidden name="offset" value="0" />
+				<label>Benutzer suchen: </label>
+				<div class="input-group w-auto mb-2 pe-0">
+					<span class="input-group-text"><f:translate key="tx_viewstatistics_label.placeholder_uid" /></span>
+					<f:form.textfield name="uid" class="form-control" value="{list.uid}"/>
+				</div>
+				<div class="input-group w-auto mb-2 pe-0">
+					<span class="input-group-text"><f:translate key="tx_viewstatistics_label.name" /></span>
+					<f:form.textfield name="name" class="form-control" value="{list.name}"/>
+				</div>
+				<div class="input-group w-auto mb-2">
+					<span class="input-group-text"><f:translate key="tx_viewstatistics_label.email" /></span>
+					<f:form.textfield name="email" class="form-control" value="{list.email}"/>
+				</div>
+				<div class="input-group w-auto mb-2">
+					<f:form.submit value="{f:translate(key: 'tx_viewstatistics_label.filter_submit_filter')}"
+								   class="btn btn-default"/>
+				</div>
+			</f:form>
+		</div>
+	</div>
+	<f:render partial="Table/Table" arguments="{list: list, data: frontendUsers}" />
+	<modules:be.footer />
+</f:section>
+</html>
+

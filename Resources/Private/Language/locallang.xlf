@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2016-12-06T10:02:02Z" product-name="view_statistics">
+		<header/>
+		<body>
+
+			<!--=== BackendModule menu ===-->
+			<trans-unit id="tx_viewstatistics_label.module_menu_list">
+				<source>Overview</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_menu_list_for_user">
+				<source>Listing for user</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_menu_list_for_page">
+				<source>Listing for page</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_menu_list_for_object">
+				<source>Listing for object</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.list_viewstatistics_refresh">
+				<source>Refresh</source>
+			</trans-unit>
+
+			<trans-unit id="tx_viewstatistics_label.list_viewstatistics_bookmark">
+				<source>Tracking list</source>
+			</trans-unit>
+
+			<!--=== BackendModule headlines ===-->
+			<trans-unit id="tx_viewstatistics_label.module_headline_list">
+				<source>Overview</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_headline_list_for_user">
+				<source>Listing for user</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_headline_list_for_page">
+				<source>Listing for page</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_headline_view_summary">
+				<source>View summary</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.module_headline_list_for_object">
+				<source>Listing for object</source>
+			</trans-unit>
+
+			<!--=== BackendModule sub headlines ===-->
+			<trans-unit id="tx_viewstatistics_label.headline_statistic_by_user">
+				<source>Statistic by Frontend-User (%1$s entries)</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.headline_statistic_by_date">
+				<source>Statistic by date (%1$s date entries)</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.headline_statistic_for_user">
+				<source>Statistic for Frontend-User (%1$s entries)</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.headline_statistic">
+				<source>Statistic (%1$s entries)</source>
+			</trans-unit>
+
+
+			<!--=== Track types ===-->
+			<trans-unit id="tx_viewstatistics_label.track_type_default">
+				<source>[all]</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.track_type_pageview">
+				<source>Page view</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.track_type_login">
+				<source>Login</source>
+			</trans-unit>
+
+			<!--=== Frontend-User types ===-->
+			<trans-unit id="tx_viewstatistics_label.frontend_user_type_default">
+				<source>[all]</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.frontend_user_type_logged_in">
+				<source>Logged in</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.frontend_user_type_anonym">
+				<source>Non logged in</source>
+			</trans-unit>
+
+
+			<trans-unit id="tx_viewstatistics_label.frontend_user">
+				<source>Frontend-User</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.ip_address">
+				<source>IP address</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.page">
+				<source>Page</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.action">
+				<source>Action</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.object">
+				<source>Object</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.login_duration">
+				<source>Login duration</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.breadcrumb">
+				<source>Page breadcrumb</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.creation_date">
+				<source>Creation date</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.referrer">
+				<source>Referrer</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.user_agent">
+				<source>User-Agent</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.unique_id">
+				<source>Uid</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.page_view_summary">
+				<source>Page view summary</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.page_view_by_date">
+				<source>Page views by date</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.page_view_by_frontend_user">
+				<source>Page views by Frontend-user</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.date_from">
+				<source>From</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.date_to">
+				<source>To</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.anonym_or_deleted">
+				<source>[anonym or deleted]</source>
+			</trans-unit>
+
+			<!--=== Filter ===-->
+			<trans-unit id="tx_viewstatistics_label.filter_headline">
+				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.filter_reset">
+				<source>Reset</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.filter_submit_filter">
+				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.filter_submit_search">
+				<source>Search</source>
+			</trans-unit>
+
+			<!--=== Placeholder ===-->
+			<trans-unit id="tx_viewstatistics_label.placeholder_email">
+				<source>E-Mail</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.placeholder_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.placeholder_uid">
+				<source>Uid</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.placeholder_title">
+				<source>Title</source>
+			</trans-unit>
+
+			<!--=== BackendModule Buttons ===-->
+			<trans-unit id="tx_viewstatistics_label.csv_export">
+				<source>CSV-Export</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.show_list_for_user">
+				<source>Show listing for user</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_label.back_to_search">
+				<source>Back to search</source>
+			</trans-unit>
+
+
+			<!--===============
+			Overview list
+			===============-->
+
+			<trans-unit id="tx_modules_label.list_viewstatistics_header">
+				<source>View Statistics</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_creation_date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_action">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_ip_address">
+				<source>IP address</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_frontend_user">
+				<source>Frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_login_duration">
+				<source>Login duration</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_page">
+				<source>Page</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_referrer">
+				<source>Referrer</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_user_agent">
+				<source>User Agent</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_col_object_uid">
+				<source>Object</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewstatistics_no_entries">
+				<source>No view statistics found</source>
+			</trans-unit>
+			<trans-unit id="tx_fahrzeugsuche_label.list_overview_viewstatistics_refresh">
+				<source>Refresh view statistics</source>
+			</trans-unit>
+			<trans-unit id="tx_fahrzeugsuche_label.list_overview_viewstatistics_bookmark">
+				<source>view statistics list</source>
+			</trans-unit>
+
+			<!-- Frontend user table header columns -->
+			<trans-unit id="tx_modules_label.list_frontend_user_header">
+				<source>Frontend user</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_username">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_col_email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_frontend_user_no_entries">
+				<source>No frontend users found</source>
+			</trans-unit>
+
+
+			<!-- list page table header columns -->
+			<trans-unit id="tx_modules_label.list_page_header">
+				<source>Page</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_page_col_uid">
+				<source>Uid</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_page_col_title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_page_col_breadcrumb">
+				<source>Breadcrumb</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_page_no_entries">
+				<source>No pages available</source>
+			</trans-unit>
+
+
+			<!-- list page view summary header columns -->
+			<trans-unit id="tx_modules_label.list_viewsummary_header">
+				<source>Page summary</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewsummary_col_creation_date">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewsummary_col_total">
+				<source>Page views</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewsummary_col_frontend_user_total">
+				<source>Frontend user views</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_viewsummary_no_entries">
+				<source>No summaries available</source>
+			</trans-unit>
+
+			<!-- list view summary header columns -->
+			<trans-unit id="tx_modules_label.list_object_header">
+				<source>Objects</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_object_no_entries">
+				<source>No objects found</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_object_col_uid">
+				<source>Uid</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_object_col_title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_modules_label.list_object_col_crdate">
+				<source>Date</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

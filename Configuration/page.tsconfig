@@ -1,0 +1,22 @@
+# For backend modules build on EXT:modules
+templates {
+    codingms/view-statistics {
+        1718106815 = codingms/modules:Resources/Private/Backend/
+        1718106816 = codingms/view-statistics:Resources/Private/Backend/
+    }
+}
+mod.wizards.newContentElement.wizardItems {
+    special {
+        show = *
+        elements {
+            visitors {
+                title = LLL:EXT:view_statistics/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_viewstatistics_newcontentelementwizard_visitors.title
+                description = LLL:EXT:view_statistics/Resources/Private/Language/locallang_newcontentelementwizard.xlf:tx_viewstatistics_newcontentelementwizard_visitors.description
+                iconIdentifier = content-plugin-viewstatistics-visitors
+                tt_content_defValues {
+                    CType = viewstatistics_visitors
+                }
+            }
+        }
+    }
+}

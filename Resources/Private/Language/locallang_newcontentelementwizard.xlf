@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-12-27T14:55:41Z" product-name="view_statistics">
+		<header/>
+		<body>
+			<trans-unit id="tx_viewstatistics_newcontentelementwizard_visitors.title">
+				<source>Visitor-Count</source>
+			</trans-unit>
+			<trans-unit id="tx_viewstatistics_newcontentelementwizard_visitors.description">
+				<source>Display the summary of visitors of this page over all.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

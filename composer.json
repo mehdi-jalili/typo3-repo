@@ -1,20 +1,47 @@
 {
-    "name": "anothervision/av_lightdarklegacy",
-    "type": "typo3-cms-extension",
-    "description": "CSS workaround for clients with legacy browsers that don't support light-dark() in Typo3 13 backend",
-    "authors": [
-        {
-            "name": "Mehdi Jalili",
-            "role": "Developer"
-        }
-    ],
-    "license": "GPL-2.0-or-later",
-    "require": {
-        "typo3/cms-core": "^13.0"
-    },
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "av_lightdarklegacy"
-        }
+  "name": "codingms/view-statistics",
+  "type": "typo3-cms-extension",
+  "description": "Logs frontend actions and display them in a backend module. Track page views, News, Downloads and custom objects. Optionally tracks frontend user logins and login durations. Alternative extension for Google-Analytics, Matomo, Piwik - this extension does not use any cookies! By default it does not track any personal data like IP address or even the user agent (though this can be activated optionally).",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "Statistics",
+    "Analytics"
+  ],
+  "homepage": "https://github.com/mehdi-jalili/typo3-repo",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": "^8.1",
+    "codingms/modules": ">=7.0.0,<8.0",
+    "typo3/cms-core": ">=12.4.0,<13.5",
+    "ext-openssl": "*",
+    "ext-pdo": "*"
+  },
+  "authors": [
+    {
+      "name": "Mehdi Jalili",
+      "role": "Developer",
+      "homepage": "https://github.com/mehdi-jalili/"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CodingMs\\ViewStatistics\\": "Classes"
+    }
+  },
+  "extra": {
+    "tags": "Stable, PHP 7.2, PHP 7.3, PHP 7.4, PHP 8.0, PHP 8.1, PHP 8.2, PHP 8.3, PHP 8.4, TYPO3 8.7, TYPO3 9.5, TYPO3 10.4, TYPO3 11.5, TYPO3 12.4, TYPO3 13.4, English, German, OpenSource, Free, TER",
+    "compatibility": {
+      "typo3-7.6": "1.0.3-1.0.3",
+      "typo3-8.7": "1.0.3-2.0.1",
+      "typo3-9.5": "2.0.0-3.0.9",
+      "typo3-10.4": "3.0.0-4.0.2",
+      "typo3-11.5": "4.0.0-5.0.1",
+      "typo3-12.4": "5.0.0-x.x.x",
+      "typo3-13.4": "6.0.0-x.x.x"
+    },
+    "typo3/cms": {
+      "extension-key": "view_statistics"
+    }
+  }
 }

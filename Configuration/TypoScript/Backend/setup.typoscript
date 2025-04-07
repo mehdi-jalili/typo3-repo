@@ -1,0 +1,177 @@
+# Module configuration
+module.tx_viewstatistics {
+	view {
+		templateRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Templates/
+			400 = EXT:view_statistics/Resources/Private/Backend/Templates/
+		}
+		partialRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Partials/
+			400 = EXT:view_statistics/Resources/Private/Backend/Partials/
+		}
+		layoutRootPaths {
+			300 = EXT:modules/Resources/Private/Backend/Layouts/
+			400 = EXT:view_statistics/Resources/Private/Backend/Layouts/
+		}
+	}
+	settings {
+		lists {
+			viewstatistics {
+				id = viewstatistics
+				table = tx_viewstatistics_domain_model_track
+				module = viewstatistics_viewstatistics
+				plugin = ViewStatistics
+				sortingField = crdate
+				sortingOrder = desc
+				limit = 50
+				fields {
+					creationDate {
+						format = DateTime
+						sortable = 1
+						sortingField = crdate
+						dateFormat = d.m.Y H:i
+					}
+					action {
+						format = Plain
+						sortable = 1
+					}
+					ipAddress {
+						format = Plain
+						sortable = 1
+					}
+					frontendUser {
+						format = BackendUser/Username
+						sortable = 1
+					}
+					loginDuration {
+						format = Duration
+						sortable = 1
+					}
+					page {
+						format = Page
+						sortable = 1
+					}
+					referrer {
+						format = Plain
+						sortable = 0
+					}
+					userAgent {
+						format = Plain
+						sortable = 0
+					}
+					objectUid {
+						format = Plain
+						sortable = 0
+					}
+				}
+			}
+			frontendUser {
+				id = frontendUser
+				table = fe_users
+				module = viewstatistics_viewstatistics
+				plugin = ViewStatistics
+				sortingField = username
+				sortingOrder = asc
+				limit = 20
+				fields {
+					username {
+						format = Plain
+						sortable = 1
+					}
+					name {
+						format = Plain
+						sortable = 1
+					}
+					email {
+						format = Email
+						sortable = 1
+					}
+				}
+				actions {
+					userStatistics {
+						action = UserStatistics
+					}
+				}
+			}
+			page {
+				id = page
+				table = pages
+				module = viewstatistics_viewstatistics
+				plugin = ViewStatistics
+				sortingField = uid
+				sortingOrder = asc
+				limit = 50
+				fields {
+					uid {
+						format = Plain
+					}
+					title {
+						format = Plain
+					}
+					breadcrumb {
+						format = Breadcrumb
+					}
+				}
+				actions {
+					viewSummary {
+						action = ViewSummary
+					}
+				}
+			}
+			object {
+				id = object
+				table = tx_viewstatistics_domain_model_track
+				module = viewstatistics_viewstatistics
+				plugin = ViewStatistics
+				sortingField = uid
+				sortingOrder = asc
+				limit = 50
+				fields {
+					uid {
+						format = Plain
+						sortable = 1
+					}
+					title {
+						format = Plain
+					}
+					crdate {
+						format = DateTime
+						dateFormat = d.m.Y
+						sortable = 1
+					}
+				}
+				actions {
+					viewSummary {
+						action = ViewSummary
+					}
+				}
+			}
+			viewsummary {
+				id = viewsummary
+				table = tx_viewstatistics_domain_model_track
+				module = viewstatistics_viewstatistics
+				plugin = ViewStatistics
+				sortingField = crdate
+				sortingOrder = desc
+				limit = 20
+				fields {
+					creationDate {
+						format = DateTime
+						dateFormat = d.m.Y
+						sortable = 1
+						sortingField = crdate
+					}
+					total {
+						format = Plain
+					}
+					frontendUserTotal {
+						format = Plain
+					}
+				}
+			}
+		}
+	}
+	features {
+		enableNamespacedArgumentsForBackend = 1
+	}
+}

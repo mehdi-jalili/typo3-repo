@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+	  xmlns:statistics="http://typo3.org/ns/CodingMs/ViewStatistics/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<td>
+	<statistics:page.rootline pageUid="{listItem.uid}" as="rootline" />
+	<f:for each="{rootline -> statistics:iterator.sort()}" as="rootlineItem" iteration="i">
+		<f:if condition="{i.index} > 0"> &gt;</f:if>
+		{rootlineItem.title}
+	</f:for>
+</td>
+</html>

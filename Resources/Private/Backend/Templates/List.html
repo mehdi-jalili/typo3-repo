@@ -1,0 +1,76 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:modules="http://typo3.org/ns/CodingMs/Modules/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+
+<f:layout name="Backend"/>
+<f:section name="Content">
+	<modules:be.header header="{f:translate(key: 'tx_viewstatistics_label.module_headline_list')}" />
+	<f:flashMessages />
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<f:translate key="tx_viewstatistics_label.filter_headline"/>
+		</div>
+		<div class="panel-body">
+			<f:form class="row" action="{list.action}" controller="Backend" pageUid="{list.pid}">
+				<f:form.hidden name="offset" value="0" />
+
+				<div class="form-group mb-0 pe-0" style="width: 260px !important">
+					<div class="input-group mb-2 pe-0">
+						<label for="startDate" class=" input-group-text"><f:translate key="tx_viewstatistics_label.date_from" /></label>
+						<f:form.textfield id="startDate"
+										  name="startDate"
+										  value="{f:format.date(format: 'c', date: list.period.start.datetime)}"
+										  additionalAttributes="{'autocomplete': 'off'}"
+										  class="form-control form-control-clearable t3js-datetimepicker t3js-clearable"
+										  data="{date-type: 'date'}"/>
+						<label class="btn btn-default" for="startDate">
+							<core:icon identifier="actions-calendar" />
+						</label>
+					</div>
+				</div>
+
+				<div class="form-group mb-0 pe-0" style="width: 260px !important">
+					<div class="input-group mb-2 pe-0">
+						<label for="endDate" class=" input-group-text"><f:translate key="tx_viewstatistics_label.date_to" /></label>
+						<f:form.textfield id="endDate"
+										  name="endDate"
+										  value="{f:format.date(format: 'c', date: list.period.end.datetime)}"
+										  additionalAttributes="{'autocomplete': 'off'}"
+										  class="form-control form-control-clearable t3js-datetimepicker t3js-clearable"
+										  data="{date-type: 'date'}"/>
+						<label class="btn btn-default" for="endDate">
+							<core:icon identifier="actions-calendar" />
+						</label>
+					</div>
+				</div>
+
+				<div class="input-group w-auto mb-2 pe-0">
+					<span class="input-group-text"><f:translate key="tx_viewstatistics_label.type" /></span>
+					<f:form.select name="type" class="form-select select-width-display-type"  data="{select: 'default'}"
+								   options="{list.type.items}" value="{list.type.selected}"
+								   prependOptionLabel="{f:translate(key: 'tx_viewstatistics_label.track_type_default')}"
+								   prependOptionValue=""/>
+				</div>
+
+				<div class="input-group w-auto mb-2">
+					<span class="input-group-text"><f:translate key="tx_viewstatistics_label.frontend_user" /></span>
+					<f:form.select name="feuser" class="form-select select-width-display-type"  data="{select: 'default'}"
+								   options="{list.feuser.items}" value="{list.feuser.selected}"
+								   optionLabelField="feuser"
+								   optionValueField="feuser"
+								   prependOptionLabel="{f:translate(key: 'tx_viewstatistics_label.frontend_user_type_default')}"
+								   prependOptionValue=""/>
+				</div>
+
+				<div class="input-group w-auto mb-2">
+					<f:form.submit value="{f:translate(key: 'tx_viewstatistics_label.filter_submit_filter')}"
+								   class="btn btn-default"/>
+				</div>
+			</f:form>
+		</div>
+	</div>
+	<f:render partial="Table/Table" arguments="{list: list, data: tracking}" />
+	<modules:be.footer />
+</f:section>
+</html>
+
